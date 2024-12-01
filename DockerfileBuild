@@ -18,7 +18,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Skopiowanie zbudowanej jarki z kontenera budującego do kontenera uruchamiającego aplikację
-COPY --from=build /app/target/rest-service-complete-0.0.1-SNAPSHOT.jar /app/demoWeb.jar
+COPY --from=build /app/target/rest-service-complete-0.0.1-SNAPSHOT.jar /app/Devops.jar
 
 # Wystawienie portu 8080
 EXPOSE 8080
