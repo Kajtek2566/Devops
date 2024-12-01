@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Skopiowanie jarki z hosta do kontenera
-COPY target/Devops-0.0.1-SNAPSHOT.jar /app/Devops.jar
+COPY target/rest-service-complete-0.0.1-SNAPSHOT.jar /app/Devops.jar
 
 # Wystawienie portu 8080
 EXPOSE 8080
